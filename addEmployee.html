@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>
+	LMS-Employee Attendance
+</title>
+<script >
+
+function validate()
+{
+	var n=document.addemployee.ename.value;
+	if(!(n>="a" && n<="z")&& !(n>="A"&& n<="Z"))
+	{
+		alert("Enter Alphabets");
+		//return false;
+	}
+	var id=document.addemployee.empid.value;	
+	if(!(id>="1" && id<="999"))
+	{
+		alert("not valid employee id");
+		//return false;
+	}
+	var ad=document.addemployee.address.value;
+	if(!(ad>="a" && ad<="z") || ad=="$" || ad=="%" || ad=="*" || ad=="(" || ad==")" || ad=="+" || ad=="=" || ad=="_" || ad=="@" || ad=="!" || ad==";" || ad=="<" || ad==">" || ad=="?" || ad=="^")
+	{
+		alert("Address involve Invalid Character");
+		//return false;
+		
+	}
+	var ph=document.addemployee.phone.value;
+	if(!(ph>="0" && ph<="9") && ph.length>11)
+	{
+		alert("Enter numbers");
+		//return false;
+		
+	}
+	var em=document.addEmployee.email.value;
+	at=em.indexOf('@');
+	dot=em.lastIndexOf('.');
+			
+	if(em=="" || at<1  || dot<=at+1 || em.length<=dot )
+	{
+		alert("Invalid email Format");
+		//return false;
+	}
+	var d=document.addEmployee.des.value;
+	if(!(d>="a" && d<="z" ) && !(d>="A" && d<="Z"))
+		alert("designation does only alphabets");
+
+	
+}
+</script>
+</head>
+
+<body>
+	<div id="container" style="width:1155px;">
+	
+	<div id="header" style="background-color:6699FF;">
+	<h1 style="font-family:calibri;margin-bottom:0">Library Management System</h3>
+        </div>
+	
+	<div id="menu" style="background-color:66CCFF;height:450px;width:200px;float:left;">
+	<a href="Menu.html"><b>Menu</b><br></a>
+	<a href="AddMember.html">Add Member<br></a>
+	<a href="AddBook.html">Add Book<br></a>
+	<a href="BookList.html">Book List<br></a>
+	<a href="SearchBook.html">Search Book<br></a>
+	<a href="OrderBook.html">Order Book<br></a>
+	<a href="IssueBook.html">Issue Book<br></a>
+	<a href="BookStatus.html">Update Book Status<br></a>
+	<a href="MemberHistory.html">Member History<br></a>
+	<a href="Fine.html">Fine<br></a>
+	<a href="addEmployee.html"><b>Add Employee</b><br></a>
+	<a href="employeeInfo.html">Employee Information<br></a>
+	<a href="employeeSalary.html">Employee Salary<br></a>
+	<a href="employeeAttendance.html">Mark Attendance<br></a>
+	<a href="publisherInfo.html">Publisher Information<br></a>
+	<a href="publisherOrder.html">Publisher Order List<br></a>
+	<a href="Login.html">Log out<br></a>
+	</div>
+	
+	<div id="content" style="background-color:99FFFF;height:450px;width:955px;float:left;">
+	<h2><b>Add Employee</b></h2>
+	<form name="addemployee" style="text-align:center" action="addEmployee" method="post" >
+	
+	<br><br>
+	<table border=5 bordercolor="#6699FF" align="center">
+	<tr><td>Employee Name</td>
+	<td><input type="text" name="ename"></td>
+	</tr>
+	
+	<tr><td>Employee ID</td>
+	<td><input type="text" name="empid"></td>
+	</tr>
+	
+	<tr>
+	<td>Employee Address</td>
+	<td><input type="text" name="address"></td>
+	</tr>
+	
+	<tr>
+	<td>Employee Phone No.</td>
+	<td><input type="text" name="phn" ></td>
+	</tr>
+	
+	<tr>
+	<td>Employee Email Address</td>
+	<td><input type="text" name="email"></td>
+	</tr>
+	
+	<tr>
+	<td>Employee Designation</td>
+	<td><input type="text" name="des"></td>
+	</tr>
+	
+	</table>
+
+	<input type="submit" value="Add" onSubmit="validate()">
+	<br>
+	</form> 
+	</div>
+	
+	<div id="footer" style="background-color:6699FF;clear:both;text-align:center;"> 
+	LMS</div>
+	</div>                                                                                                                                                                                               >
+</body>
+</html>

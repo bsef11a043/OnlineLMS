@@ -1,0 +1,182 @@
+<web-app>
+	
+	<servlet>
+		
+		<servlet-name>addEmployee</servlet-name>
+		<servlet-class>addEmployee</servlet-class>
+	</servlet>
+	<servlet>
+		
+		<servlet-name>employeeInfo</servlet-name>
+		<servlet-class>employeeInfo</servlet-class>
+	</servlet>
+	<servlet>
+		
+		<servlet-name>employeeInfo2</servlet-name>
+		<servlet-class>employeeInfo2</servlet-class>
+	</servlet>
+	<servlet>
+		
+		<servlet-name>employeeInfo3</servlet-name>
+		<servlet-class>employeeInfo3</servlet-class>
+	</servlet>
+	<servlet>
+		
+		<servlet-name>employeeSalary</servlet-name>
+		<servlet-class>employeeSalary</servlet-class>
+	</servlet>
+	<servlet>
+		
+		<servlet-name>employeeSalary2</servlet-name>
+		<servlet-class>employeeSalary2</servlet-class>
+	</servlet>
+	<servlet>
+		
+		<servlet-name>employeeSalary3</servlet-name>
+		<servlet-class>employeeSalary3</servlet-class>
+	</servlet>
+
+	<servlet>
+		
+		<servlet-name>Search</servlet-name>
+		<servlet-class>Search</servlet-class>
+	</servlet>
+	<servlet>
+		
+		<servlet-name>publisherInfo</servlet-name>
+		<servlet-class>publisherInfo</servlet-class>
+	</servlet>
+	<servlet>
+		
+		<servlet-name>publisherInfo2</servlet-name>
+		<servlet-class>publisherInfo2</servlet-class>
+	</servlet>
+	<servlet>
+		
+		<servlet-name>publisherOrder</servlet-name>
+		<servlet-class>publisherOrder</servlet-class>
+	</servlet>
+	<servlet>
+		
+		<servlet-name>publisherOrder2</servlet-name>
+		<servlet-class>publisherOrder2</servlet-class>
+	</servlet>
+	<servlet>
+		
+		<servlet-name>addMember</servlet-name>
+		<servlet-class>addMember</servlet-class>
+	</servlet>
+	<servlet>
+		
+		<servlet-name>addBook</servlet-name>
+		<servlet-class>addBook</servlet-class>
+	</servlet>
+	<servlet>
+		
+		<servlet-name>Login</servlet-name>
+		<servlet-class>Login</servlet-class>
+	</servlet>
+	<servlet>
+		
+		<servlet-name>BookList</servlet-name>
+		<servlet-class>BookList</servlet-class>
+	</servlet>
+	<servlet>
+		
+		<servlet-name>issue</servlet-name>
+		<servlet-class>issue</servlet-class>
+	</servlet>
+	<servlet>
+		
+		<servlet-name>BookStatus</servlet-name>
+		<servlet-class>BookStatus</servlet-class>
+	</servlet>
+	<servlet>
+		
+		<servlet-name>memberHistory</servlet-name>
+		<servlet-class>memberHistory</servlet-class>
+	</servlet>
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>addEmployee</servlet-name>
+		<url-pattern>/addEmployee</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>employeeInfo</servlet-name>
+		<url-pattern>/employeeInfo</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>employeeInfo2</servlet-name>
+		<url-pattern>/employeeInfo2</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>employeeInfo3</servlet-name>
+		<url-pattern>/employeeInfo3</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>employeeSalary</servlet-name>
+		<url-pattern>/employeeSalary</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>employeeSalary2</servlet-name>
+		<url-pattern>/employeeSalary2</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>employeeSalary3</servlet-name>
+		<url-pattern>/employeeSalary3</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Search</servlet-name>
+		<url-pattern>/Search</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>publisherInfo</servlet-name>
+		<url-pattern>/publisherInfo</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>publisherInfo2</servlet-name>
+		<url-pattern>/publisherInfo2</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>publisherOrder</servlet-name>
+		<url-pattern>/publisherOrder</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>publisherOrder2</servlet-name>
+		<url-pattern>/publisherOrder2</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>addMember</servlet-name>
+		<url-pattern>/addMember</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>addBook</servlet-name>
+		<url-pattern>/addBook</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BookList</servlet-name>
+		<url-pattern>/BookList</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>issue</servlet-name>
+		<url-pattern>/IssueBook</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>BookStatus</servlet-name>
+		<url-pattern>/BookStatus</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>memberHistory</servlet-name>
+		<url-pattern>/memberHistory</url-pattern>
+	</servlet-mapping>
+</web-app>
